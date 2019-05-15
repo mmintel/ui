@@ -1,9 +1,14 @@
 {
   "name": "@mmintel/ui-button",
   "version": "0.0.0",
-  "main": "index.vue",
+  "main": "dist/button.umd.js",
+  "module": "dist/button.esm.js",
+  "unpkg": "dist/button.min.js",
+  "browser": {
+    "./sfc": "src/button.vue"
+  },
   "scripts": {
-    "build": "vue-cli-service build index.vue"
+    "build": "vue-cli-service build --target lib src/button.vue"
   },
   "publishConfig": {
     "access": "public"
