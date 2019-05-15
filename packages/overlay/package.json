@@ -1,6 +1,7 @@
 {
   "name": "@mmintel/ui-overlay",
   "version": "0.0.0",
+  "main": "index.vue",
   "publishConfig": {
     "access": "public"
   },
