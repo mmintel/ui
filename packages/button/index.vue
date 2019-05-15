@@ -92,6 +92,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@mmintel/ui-core/styles/abstracts/sr-only';
+@import '@mmintel/ui-core/styles/abstracts/font-size';
+
 .button {
   $types: (
     default,

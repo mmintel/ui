@@ -2,11 +2,17 @@
   "name": "@mmintel/ui-button",
   "version": "0.0.0",
   "main": "index.vue",
+  "scripts": {
+    "build": "vue-cli-service build index.vue"
+  },
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
     "@mmintel/ui-core": "^0.0.0",
     "vue-types": "^1.5.3"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^3.7.0"
   }
 }

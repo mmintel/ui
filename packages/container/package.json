@@ -8,5 +8,8 @@
   "dependencies": {
     "@mmintel/ui-core": "^0.0.0",
     "vue-types": "^1.5.3"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^3.7.0"
   }
 }
