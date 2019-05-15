@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button Component rendering renders correctly 1`] = `
+exports[`Button Component #rendering renders correctly 1`] = `
 <button
   class="button button--default button--medium"
 >

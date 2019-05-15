@@ -65,7 +65,8 @@ export default {
   },
   computed: {
     component() {
-      if (this.to) return 'nuxt-link';
+      if (this.to && this.$nuxt) return 'nuxt-link';
+      if (this.to && !this.$nuxt && this.$router) return 'router-link';
       if (this.href) return 'a';
       if (this.fake) return 'span';
       return 'button';
