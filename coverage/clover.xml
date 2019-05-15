@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1557925475454" clover="3.2.0">
-  <project timestamp="1557925475455" name="All files">
-    <metrics statements="6" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="2" coveredmethods="0" elements="16" coveredelements="0" complexity="0" loc="6" ncloc="6" packages="1" files="1" classes="1"/>
+<coverage generated="1557928781198" clover="3.2.0">
+  <project timestamp="1557928781198" name="All files">
+    <metrics statements="6" coveredstatements="6" conditionals="8" coveredconditionals="4" methods="2" coveredmethods="2" elements="16" coveredelements="12" complexity="0" loc="6" ncloc="6" packages="1" files="1" classes="1"/>
     <file name="index.vue" path="/Users/marc.mintel/Projects/Private/ui/packages/button/index.vue">
-      <metrics statements="6" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="2" coveredmethods="0"/>
-      <line num="33" count="0" type="stmt"/>
-      <line num="68" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="69" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="70" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="71" count="0" type="stmt"/>
-      <line num="74" count="0" type="cond" truecount="0" falsecount="2"/>
+      <metrics statements="6" coveredstatements="6" conditionals="8" coveredconditionals="4" methods="2" coveredmethods="2"/>
+      <line num="33" count="1" type="stmt"/>
+      <line num="68" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="69" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="70" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="71" count="1" type="stmt"/>
+      <line num="74" count="1" type="cond" truecount="1" falsecount="1"/>
     </file>
   </project>
 </coverage>

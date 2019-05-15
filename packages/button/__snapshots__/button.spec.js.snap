@@ -2,6 +2,12 @@
 
 exports[`Button Component rendering renders correctly 1`] = `
 <button
-  class="button button--default"
-/>
+  class="button button--default button--medium"
+>
+  <!---->
+   
+  <!---->
+   
+  <!---->
+</button>
 `;

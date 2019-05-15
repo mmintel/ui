@@ -14,10 +14,6 @@ module.exports = {
     '.*\\.(vue)$': 'vue-jest',
   },
   collectCoverage: true,
-  collectCoverageFrom: [
-    '<rootDir>/packages/**/*.vue',
-  ],
-  transformIgnorePatterns: [
-    "<rootDir>.*(node_modules)(?!.*mmintel.*).*$"
-  ]
+  collectCoverageFrom: [ '<rootDir>/packages/**/*.vue' ],
+  transformIgnorePatterns: [ '<rootDir>.*(node_modules)(?!.*mmintel.*).*$' ],
 };

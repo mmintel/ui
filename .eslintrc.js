@@ -21,7 +21,6 @@ module.exports = {
   ],
   plugins: [
     'vue',
-    'graphql',
   ],
   rules: {
     camelcase: 0,

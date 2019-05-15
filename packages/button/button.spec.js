@@ -1,9 +1,5 @@
-import { createLocalVue, mount } from '@vue/test-utils';
-import Ripple from 'vue-ripple-directive';
+import { mount } from '@vue/test-utils';
 import Button from '.';
-
-const localVue = createLocalVue();
-localVue.use(Ripple);
 
 describe('Button Component', () => {
   describe('rendering', () => {
