@@ -1,0 +1,11 @@
+{
+  "name": "@mmintel/ui-select",
+  "version": "0.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@mmintel/ui-core": "^0.0.0",
+    "vue-types": "^1.5.3"
+  }
+}

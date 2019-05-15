@@ -53,6 +53,7 @@ describe('Button Component', () => {
       expect(wrapper.vm.classes).toContain(`${baseClass}--block`);
       expect(wrapper.vm.classes).toContain(`${baseClass}--attached-left`);
     });
+
     describe('evaluates to the right component', () => {
       it('returns a `nuxt-link` if `to` is passed and $nuxt is available', () => {
         const wrapper = shallowMount(Button, {
