@@ -46,10 +46,13 @@ export default {
       'medium',
       'large',
     ]).def('medium'),
-    nativeType: VueTypes.oneOf([ 'submit' ]),
+    nativeType: VueTypes.oneOf([
+      'submit',
+      'button',
+    ]),
     to: VueTypes.oneOfType([
-      Object,
-      String,
+      VueTypes.object,
+      VueTypes.string,
     ]),
     attached: VueTypes.oneOf([
       'left',

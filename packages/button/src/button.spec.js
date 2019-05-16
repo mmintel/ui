@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils';
-import Button from '.';
+import Button from './button';
 
 describe('Button Component', () => {
   describe('#rendering', () => {
@@ -7,16 +7,61 @@ describe('Button Component', () => {
       const wrapper = shallowMount(Button);
       expect(wrapper.element).toMatchSnapshot();
     });
+    it('sets the classes to the element', () => {
+      const wrapper = shallowMount(Button, {
+        computed: {
+          classes: () => 'test',
+        },
+      });
+      expect(wrapper.classes()).toContain('test');
+    });
   });
 
   // describe('#props', () => {
   //   it('complains when wrong `type` is passed', () => {
-  //     const wrapper = shallowMount(Button, {
+  //     global.console = { warn: jest.fn(), error: jest.fn() };
+  //     shallowMount(Button, {
   //       propsData: {
   //         type: 'something',
   //       },
   //     });
-  //     expect(wrapper);
+  //     expect(console.warn).toHaveBeenCalledTimes(1);
+  //     expect(console.error).toHaveBeenCalledTimes(1);
+  //   });
+  //   it('complains when wrong `size` is passed', () => {
+  //     global.console = { warn: jest.fn(), error: jest.fn() };
+  //     shallowMount(Button, {
+  //       propsData: {
+  //         size: 'something',
+  //       },
+  //     });
+  //     expect(console.warn).toHaveBeenCalledTimes(1);
+  //     expect(console.error).toHaveBeenCalledTimes(1);
+  //   });
+  //   it('complains when wrong `nativeType` is passed', () => {
+  //     global.console = { warn: jest.fn(), error: jest.fn() };
+  //     shallowMount(Button, {
+  //       propsData: {
+  //         nativeType: 'something',
+  //       },
+  //     });
+  //     expect(console.warn).toHaveBeenCalledTimes(1);
+  //     expect(console.error).toHaveBeenCalledTimes(1);
+  //   });
+  //   it('complains when `to` is not String or Object', () => {
+  //     global.console = { warn: jest.fn(), error: jest.fn() };
+  //     shallowMount(Button, {
+  //       propsData: {
+  //         to: 1,
+  //       },
+  //     });
+  //     shallowMount(Button, {
+  //       propsData: {
+  //         to: () => 'test',
+  //       },
+  //     });
+  //     expect(console.warn).toHaveBeenCalledTimes(2);
+  //     expect(console.error).toHaveBeenCalledTimes(2);
   //   });
   // });
 
@@ -40,18 +85,20 @@ describe('Button Component', () => {
         },
       });
       const baseClass = 'button';
-      expect(wrapper.vm.classes).toContain(`${baseClass}`);
-      expect(wrapper.vm.classes).toContain(`${baseClass}--default`);
-      expect(wrapper.vm.classes).toContain(`${baseClass}--medium`);
-      expect(wrapper.vm.classes).toContain(`${baseClass}--has-badge`);
-      expect(wrapper.vm.classes).toContain(`${baseClass}--has-icon`);
-      expect(wrapper.vm.classes).toContain(`${baseClass}--fake`);
-      expect(wrapper.vm.classes).toContain(`${baseClass}--text`);
-      expect(wrapper.vm.classes).toContain(`${baseClass}--icon`);
-      expect(wrapper.vm.classes).toContain(`${baseClass}--dense`);
-      expect(wrapper.vm.classes).toContain(`${baseClass}--disabled`);
-      expect(wrapper.vm.classes).toContain(`${baseClass}--block`);
-      expect(wrapper.vm.classes).toContain(`${baseClass}--attached-left`);
+      expect(wrapper.vm.classes).toEqual(expect.arrayContaining([
+        `${baseClass}`,
+        `${baseClass}--default`,
+        `${baseClass}--medium`,
+        `${baseClass}--has-badge`,
+        `${baseClass}--has-icon`,
+        `${baseClass}--fake`,
+        `${baseClass}--text`,
+        `${baseClass}--icon`,
+        `${baseClass}--dense`,
+        `${baseClass}--disabled`,
+        `${baseClass}--block`,
+        `${baseClass}--attached-left`,
+      ]));
     });
 
     describe('evaluates to the right component', () => {
