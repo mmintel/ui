@@ -1,0 +1,25 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "package.json",
+        "packages/button/package.json",
+        "packages/card/package.json",
+        "packages/center/package.json",
+        "packages/container/package.json",
+        "packages/core/package.json",
+        "packages/dropdown/package.json",
+        "packages/field/package.json",
+        "packages/fieldset/package.json",
+        "packages/overlay/package.json",
+        "packages/radio/package.json",
+        "packages/select/package.json",
+        "packages/table/package.json",
+        "packages/tabs/package.json",
+        "packages/theme/package.json",
+        "packages/tooltip/package.json",
+        "packages/type/package.json"
+      ]
+    }
+  }
+}
